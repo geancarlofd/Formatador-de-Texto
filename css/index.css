@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 
 :root {
     --cor-principal:#2b729b;
@@ -18,14 +22,14 @@
     --cor-2-principal-hover-3:#C84B31;
     --cor-2-principal-hover-4:#ECDBBA;
 
-    --cor-3-principal:#5f5f5f;
+    --cor-3-principal:#912929;
     --cor-3-principal-hover-1:#CE2525;
     --cor-3-principal-hover-2:#FF6600;
     --cor-3-principal-hover-3:#F1C550;
     --cor-3-principal-hover-4:#76eec6;
 
 
-    --cor-background-3:#f5d1d1;
+    --cor-background-3:#f8dddd;
     --cor-background-2:#f3e4d0;
     --cor-background-1:#e9e9e9;
     --cor-fonte:#ffffff;
@@ -87,12 +91,23 @@
     background: linear-gradient(-45deg, var(--cor-principal-hover-1), var(--cor-principal-hover-2), var(--cor-principal-hover-3), var(--cor-principal-hover-4));
 }
 
+.cor-Principal-h:hover {
+    background: linear-gradient(-45deg, var(--cor-principal-hover-1), var(--cor-principal-hover-2), var(--cor-principal-hover-3), var(--cor-principal-hover-4));
+}
+
+
+.cor-Principal-Gradient{
+    background: linear-gradient(-45deg, var(--cor-principal), #161616);
+    background-size: 250%;
+    animation: colors 10s ease infinite;
+}
 
 body{
     margin: 0;
     background: linear-gradient(45deg, var(--cor-background-1), var(--cor-background-2), var(--cor-background-3));
     background-size: 800%;
     animation: colors 10s ease infinite;
+
 }
 
 .logo{
@@ -109,7 +124,7 @@ body{
     height:50px;
     margin-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--cor-fonte);
     text-align: center;
     padding-top: 10px;
@@ -121,7 +136,7 @@ body{
 }
 
 .dBut{
-    width: 99%;
+    width: 98%;
     margin-left: 1%;
     margin-right: 1%;
     float:left;
@@ -134,16 +149,18 @@ body{
     margin-bottom: 5%;
     width: 75%;
     float:left;
+    overflow: hidden;
 }
 
 .bModo {
-    width: 16.5%;
+    width: 16.666667%;
     height: 50px;
     color: var(--cor-fonte);
     border:none;
-    font-size: 1vw;
+    font-size: 0.85rem;
     text-align: center;
     float:left;
+    background: none;
 
 }
 
@@ -155,11 +172,12 @@ body{
 
 .txtBox{
     width: 90%;
-    height: 45%;
+    height: 50%;
     margin-bottom: 15px;
     background-color: #fafafa;
     border-radius:1px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
 }
 .bFormat{
     width: 90%;
@@ -167,7 +185,7 @@ body{
     color: var(--cor-fonte);
     border:none;
     border-radius: 2px;
-    font-size: 1vw;
+    font-size: 0.85rem;
     text-align: center;
     margin-top:15px;
 }
@@ -229,6 +247,27 @@ texto{
     }
 }
 
+.conteudoTxt{
+    width: 100%;
+    color:var(--cor-fonte);
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.textoConteudo{
+    margin:-10;
+    margin-left:25px;
+    margin-right:5px;
+    /*font-size: 1rem;*/
+}
+
+.spacer{
+    width:100%;
+    height:40%;
+}
+
 .footer{
     width: 100%;
     height:100px;
@@ -237,4 +276,44 @@ texto{
     text-align: center;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 500px){
+    .txtBox, .bFormat {
+        width: 100%;
+
+    }    
+    .switch-cor{
+        height: 50px;
+    }
+    texto {
+        margin: 15px;
+    }
+    .btn-swith {
+        margin: 4px;
+        margin-top:10.5px;
+
+    }
+
+    .bModo{
+        width: 33.33%;
+        font-size:0.8rem;
+    }
+    .logo{
+        top:9px;
+    }
+    .header {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+    
+    .textoConteudo {
+        overflow: auto;
+        margin-left: 15px;
+        margin-right: 10px;
+        /*font-size: 0.5rem;*/
+    }
+    .txtFooter{
+        font-size: 0.7rem;
+    }
 }

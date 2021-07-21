@@ -1,35 +1,51 @@
-<html>
+<html  lang="pt-br">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formatador de Texto</title>
         <link rel="stylesheet" href="css/index.css">
         <script type="text/javascript" src="js/index.js"></script>
 
-        <title>Formatador de Texto</title>
+        <title>Formatador de Texto - Texto Aqui</title>
         <link rel="shortcut icon" href="img/icon.png">
     </head>
     <body>
-        <div class="header cor-Principal-fixo">
+        <div class="header cor-Principal-Gradient">
             <img class="logo" src="img/icon.png">
             Formatador de Texto
         </div>
 
         <div class="formatador">
-            <div class="dBut">
-                <button class="bModo cor-Principal" id="bMaiusculo">Maiúsculo</button>
-                <button class="bModo cor-Principal" id="bMinusculo">Minúsculo</button>
-                <button class="bModo cor-Principal" id="bPmaiusculo">Primeira Letra Maiúscula</button>
-                <button class="bModo cor-Principal" id="bPminusculo">Primeira Letra Minúscula</button>
-                <button class="bModo cor-Principal" id="bAlternada">Letras Alternadas</button>
-                <button class="bModo cor-Principal" id="bContrario">Ao Contrário</button>
+            <div class="dBut cor-Principal-Gradient">
+                <button class="bModo cor-Principal-h" id="bMaiusculo">Maiúsculo</button>
+                <button class="bModo cor-Principal-h" id="bMinusculo">Minúsculo</button>
+                <button class="bModo cor-Principal-h" id="bPmaiusculo">Primeira Letra Maiúscula</button>
+                <button class="bModo cor-Principal-h" id="bPminusculo">Primeira Letra Minúscula</button>
+                <button class="bModo cor-Principal-h" id="bAlternada">Letras Alternadas</button>
+                <button class="bModo cor-Principal-h" id="bContrario">Ao Contrário</button>
             </div>
             <div class="dInpt">
                 <textarea class="txtBox" id="txtBoxIpt"></textarea><br>
-                <button class="bFormat cor-Principal" id="bCopiar">Copiar</button>
-                <button class="bFormat cor-Principal" id="bLimpar">Limpar Campo</button>
+                <button class="bFormat cor-Principal-Gradient cor-Principal" id="bCopiar">Copiar</button>
+                <button class="bFormat cor-Principal-Gradient cor-Principal" id="bLimpar">Limpar Campo</button>
             </div>
         </div>
+
+        <div class="spacer"></div>
+
+        <div class="conteudoTxt cor-Principal-Gradient">
+            <p class="textoConteudo"> Este site tem o intuito de facilitar a formatação de seus textos, modificando letras para minúsculas ou maiúsculas.</p><br><br><br>
+            <p class="textoConteudo"> Formate seus textos como preferir. Utilize os botões da barra superior para modificá-lo. Depois aperte o botão "Copiar",
+                   dessa forma o conteúdo do box de texto será copiado para o seu clipboard. Basta dar CTRL+V onde desejar.</p><br><br>
+            <p class="textoConteudo"> Caso queira limpar o box de texto, utilize o botão "Limpar". Lembrando que seu progresso será perdido e não poderá ser restaurado.</p><br><br>
+            <p class="textoConteudo"> É possível alterar o tema do site para a cor que mais lhe agradar. Clique em qualquer um dos 3 temas na barra inferior e divirta-se</p><br><br>
+            <p class="textoConteudo"> Novas funcionalidades ainda serão adicionadas, para que o Formatador fique cada vez mais completo e útil.</p><br><br>
+            <p class="textoConteudo"> Obrigado pela visita e pelo apoio. Volte sempre.</p><br><br>
+        </div>
+
         <div class="footer">
-            <p>Copyright 2021 @ Geancarlo Ferreira Dahle</p>
+            <p class="txtFooter">Copyright 2021 @ Geancarlo Ferreira Dahle</p>
         </div>
 
         <div class="switch-cor">
@@ -41,4 +57,4 @@
         </div>
 
     </body>
-</html>
+</html> 

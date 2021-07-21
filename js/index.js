@@ -1,4 +1,5 @@
 window.onload = function () {
+    document.getElementById("txtBoxIpt").focus();
 
     //Chamada da funcao caso o botao for apertado
 
@@ -56,7 +57,7 @@ window.onload = function () {
         document.documentElement.style.setProperty('--cor-principal-hover-4', '#ECDBBA');
     }
     document.getElementById("btn-tema03").onclick = function () {
-        document.documentElement.style.setProperty('--cor-principal', '#5f5f5f');
+        document.documentElement.style.setProperty('--cor-principal', '#912929');
         document.documentElement.style.setProperty('--cor-principal-hover-1', '#CE2525');
         document.documentElement.style.setProperty('--cor-principal-hover-2', '#FF6600');
         document.documentElement.style.setProperty('--cor-principal-hover-3', '#F1C550');
